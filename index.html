@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <title>Address Book</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>My contacts</h1>
+      <form class="form-group">
+        <label for="first-name">First name:</label>
+        <input type="text" class="form-control" name="first-name" id="first-name">
+        <label for="last-name">Last name:</label>
+        <input type="text" class="form-control" name="last-name" id="last-name"><hr>
+        <button type="submit" class="btn btn-default">Add</button>
+      </form>
+      <div id="output">
+        <ul>
+        </ul>
+      </div>
+      <div id="show-contact">
+        <h2></h2>
+        <p>First Name: <span class="first-name"></span></p>
+        <p>Last Name: <span class="last-name"></span></p>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
