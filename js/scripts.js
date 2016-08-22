@@ -4,8 +4,8 @@ var Contact = function(firstName, lastName) {
   this.lastName = lastName;
 }
 
-var fullName = function(firstName, lastName){
-  firstName + " " + lastName;
+Contact.prototype.fullName = function() {
+  return this.firstName + " " + this.lastName;
 }
 
 
@@ -25,7 +25,7 @@ $("form").submit(function(event){
 
   $("#output li").last().click(function(){
     $("#show-contact").show();
-    $("#show-contact h2").text(newContact.firstName);
+    $("#show-contact h2").text(newContact.fullName());
     $(".first-name").text(newContact.firstName);
     $(".last-name").text(newContact.lastName);
   });
