@@ -14,7 +14,19 @@
         <input type="text" class="form-control" name="first-name" id="first-name">
         <label for="last-name">Last name:</label>
         <input type="text" class="form-control" name="last-name" id="last-name"><hr>
+
+        <div id="new-addresses">
+          <div class="new-address">
+            <label for="street">Street:</label>
+            <input type="text" class="form-control street" name="street">
+            <label for="city">City:</label>
+            <input type="text" class="form-control city" name="city">
+            <label for="state">State:</label>
+            <input type="text" class="form-control state" name="state"><br>
+          </div>
+        </div>
         <button type="submit" class="btn btn-default">Add</button>
+        <span id="new-address" class="btn btn-warning">New Address</span>
       </form>
       <div id="output">
         <ul>
@@ -24,6 +36,7 @@
         <h2></h2>
         <p>First Name: <span class="first-name"></span></p>
         <p>Last Name: <span class="last-name"></span></p>
+        <p>Address: <span class="address"></span>
       </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
